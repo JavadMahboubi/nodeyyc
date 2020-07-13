@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Exercise 2</title>
+    <style>
+        ul {
+            color: darkcyan;
+            font-size: 20pt;
+        }
+
+        ol {
+            color: darkred;
+            font-size: 20pt;
+        }
+
+        ul ul {
+            font-size: .5em
+        }
+
+        ol ol {
+            font-size: .5em;
+            list-style-type: upper-roman;
+        }
+
+        ul.noBullet {
+            list-style-type: none;
+            position: sticky;
+            top: 0;
+        }
+
+        ul.square {
+            list-style-type: square;
+        }
+
+        ul.image {
+            list-style-image: url('smiley.gif');
+        }
+
+        .everyOther li:nth-child(even) {
+            color: rosybrown;
+        }
+
+        .horizontal-list li {
+            display: inline;
+        }
+
+        .hoverwrapper:hover #hovershow1 {
+            display: inline;
+        }
+
+        .hoverwrapper #hovershow1 {
+            display: none;
+        }
+
+        .positionleft {
+            position: relative;
+            left: 10px;
+        }
+
+        .bgchange a:visited {
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="noBullet horizontal-list hoverwrapper">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+        <ul id="hovershow1">
+            <li>Sub Item 1</li>
+            <li>Sub Item 2</li>
+        </ul>
+    </ul>
+    <ul class="image">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <ul>
+            <li>Sub Item 1</li>
+            <li>Sub Item 2</li>
+        </ul>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+
+    </ul>
+
+
+    <ul class="square">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+    </ul>
+
+    <ol class="everyOther">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+        <ol>
+            <li>Sub Item 1</li>
+            <li>Sub Item 2</li>
+        </ol>
+    </ol>
+
+    <ol class="positionleft">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+    </ol>
+    <ul>
+        <li > Link 1: <a class="bgchange" href="http://www.google.com" target="_blank">Google</a> </li>
+        <li>Link 2:<a class="bgchange" href="http://www.microsoft.com" target="_blank">Microsoft</a> </li>
+        <li id="bgchange">Link 3: <a class="bgchange" href="http://www.w3schools.com">W3Schools</a> </li>
+        <li>Link 4:<a class="bgchange" href="http://www.yahoo.com">Yahoo</a></li>
+    </ul>
+</body>
+
+</html>
